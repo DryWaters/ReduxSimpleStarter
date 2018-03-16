@@ -1,3 +1,6 @@
+const webpack = require('webpack');
+require('dotenv').config();
+
 module.exports = {
   entry: [
     './src/index.js'
