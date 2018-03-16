@@ -22,6 +22,11 @@ module.exports = {
   resolve: {
     extensions: ['', '.js', '.jsx']
   },
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env.GOOGLE_API_KEY': JSON.stringify(process.env.GOOGLE_API_KEY)
+    })
+  ],
   devServer: {
     historyApiFallback: true,
     contentBase: './'
